@@ -1,5 +1,6 @@
 import mysql.connector
 
+
 class DatabaseConnection:
     def _init_(self):
         self.connection = mysql.connector.connect(
@@ -10,7 +11,6 @@ class DatabaseConnection:
             database="advance_python"
         )
         self.cursor = self.connection.cursor()
-
 
 
 class banker:
@@ -64,6 +64,7 @@ while True:
             break
         else:
             print("Invalid choice. Please enter a valid option.")
+
 def banker_menu():
     pass
 
